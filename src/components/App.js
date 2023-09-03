@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
-import star from '../star.png'
+import star from '../star.png';
+
 const App = () => {
+  const [val,setval]=useState(300);
   return (
     <div id="main">
-      <img src={star}  height="300px" width="300px" />
+      <img src={star}  height=`${val}px` width=`${val}px`  onClick={()=>{setval((val)=> val+2}}/>
     </div>
   )
 }
