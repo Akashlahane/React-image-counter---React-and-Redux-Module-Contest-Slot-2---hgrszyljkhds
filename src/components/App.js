@@ -6,7 +6,7 @@ const App = () => {
   const [val,setval]=useState(300);
   return (
     <div id="main">
-      <img src={star}  height=`${val}px` width=`${val}px`  onClick={()=>{setval((val)=> val+2}}/>
+      <img src={star}  height=`${val}px` width=`${val}px`  onClick={()=>{setval(val+2)}}/>
     </div>
   )
 }
